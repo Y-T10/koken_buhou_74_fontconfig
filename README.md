@@ -16,6 +16,10 @@
 
 これらのプログラムは`bin`ディレクトリに収納される．
 
+## プログラム実行時の注意
+`find_ipa_font`、`find_ipa_font_error`はIPAフォントのパスを取得するため、
+事前にIPAフォントをインストールしておいてください．
+
 ## ライセンス
 ### fontconfig
 fontconfig/COPYING
