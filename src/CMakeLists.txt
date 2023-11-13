@@ -1,1 +1,2 @@
 add_subdirectory(find_ipa_font)
+add_subdirectory(find_ipa_font_error)
