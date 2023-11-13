@@ -1,6 +1,10 @@
 # サンプルコード
 工学研究部部報74号に掲載された「フォントよ、君はどこにいる」のサンプルコードです．
 
+## お詫び
+著者の勘違いで11/12に電子と冊子が頒布されるとは考えていませんでした．
+11/14の深夜0時までに投稿します．よろしくおねがいします．
+
 ## ライセンス
 ### fontconfig
 fontconfig/COPYING
@@ -30,8 +34,3 @@ CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
 DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
 TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
-
-
-## お詫び
-著者の勘違いで11/12に電子と冊子が頒布されるとは考えていませんでした．
-11/14の深夜0時までに投稿します．よろしくおねがいします．
