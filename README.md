@@ -10,8 +10,9 @@
 
 | プログラム名 | 説明 |
 | --------------: | ---- |
-| `find_ipa_font`  | 記事に掲載されているコードのプログラム． |
-| `find_ipa_font_error`  | エラー処理を追加した`find_ipa_font`． |
+| `find-ipa-font`  | 記事に掲載されているコードのプログラム． |
+| `find-ipa-font_error`  | エラー処理を追加した`find-ipa-font`． |
+| `find-ipa-font_list`  | 関数`FcFontList`を用いてフォントを探すプログラム． |
 
 これらのプログラムは生成されると`bin`ディレクトリに格納されます．
 
