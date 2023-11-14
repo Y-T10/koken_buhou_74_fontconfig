@@ -52,6 +52,9 @@ int main() {
     FcPattern* searchPattern = FcPatternCreate();
     FcPatternAddString(searchPattern, FC_FAMILY, (const FcChar8*)"IPAex明朝");
 
+    // 関数`FcFontList`を用いてフォントを探す．
+    // この関数は、与えられたパターンを満たすフォントのみを返す．
+    // そのため、`FcFontMatch`のようにデフォルトのフォント情報は返さない．
     const auto foundPath = SearchFontPath(searchPattern);
     if(!foundPath.empty()) {
 	    printf("found font path: %s\n", foundPath.generic_string().c_str());
