@@ -55,11 +55,13 @@ int main() {
     // 関数`FcFontList`を用いてフォントを探す．
     // この関数は、与えられたパターンを満たすフォントのみを返す．
     // そのため、`FcFontMatch`のようにデフォルトのフォント情報は返さない．
-    const auto foundPath = SearchFontPath(searchPattern);
+    FcConfig* configure = FcInitLoadConfigAndFonts();
+    const auto foundPath = SearchFontPath(searchPattern, configure);
     if(!foundPath.empty()) {
 	    printf("found font path: %s\n", foundPath.generic_string().c_str());
     }
 
+    FcConfigDestroy(configure);
     FcPatternDestroy(searchPattern);
 
     FcFini();
