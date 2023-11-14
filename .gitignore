@@ -1,3 +1,7 @@
 *build/
 
 bin/
+
+# clangd
+.cache/
+compile_commands.json
