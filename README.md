@@ -17,6 +17,12 @@
 
 これらのプログラムは生成されると`bin`ディレクトリに格納されます．
 
+## プログラムの実行方法
+```bash
+$ cd path/to/bin
+$ ./find-font* "font name"
+```
+
 ## ライセンス
 ### fontconfig
 fontconfig/COPYING
