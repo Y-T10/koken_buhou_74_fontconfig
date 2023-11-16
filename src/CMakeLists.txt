@@ -1,3 +1,4 @@
 add_subdirectory(find_ipa_font)
 add_subdirectory(find_ipa_font_error)
 add_subdirectory(find_ipa_font_list)
+add_subdirectory(find-ipa-font_cpp)
