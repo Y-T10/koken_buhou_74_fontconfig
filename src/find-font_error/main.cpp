@@ -21,11 +21,16 @@ const std::string SearchFont(FcConfig* conf, FcPattern* pattern) {
     return foundPath;
 };
 
-int main() {
+int main(int argc, char* argv[]) {
+    if(argc <= 1) {
+        printf("usage: %s \"font-name\"\n", argv[0]);
+        return 0;
+    }
+
     FcInit();
 
     FcPattern* searchPattern = FcPatternCreate();
-    if(!FcPatternAddString(searchPattern, FC_FAMILY, (const FcChar8*)"IPAex明朝")) {
+    if(!FcPatternAddString(searchPattern, FC_FAMILY, (const FcChar8*)argv[1])) {
         return 1;
     }
 

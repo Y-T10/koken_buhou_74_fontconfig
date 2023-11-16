@@ -1,11 +1,16 @@
 #include <cstdio>
 #include "fontconfig/fontconfig.h"
 
-int main() {
+int main(int argc, char* argv[]) {
+    if(argc <= 1) {
+        printf("usage: %s \"font-name\"\n", argv[0]);
+        return 0;
+    }
+
     FcInit();
 
     FcPattern* searchPattern = FcPatternCreate();
-    FcPatternAddString(searchPattern, FC_FAMILY, (const FcChar8*)"IPAex明朝");
+    FcPatternAddString(searchPattern, FC_FAMILY, (const FcChar8*)argv[1]);
 
     FcConfig* configure = FcInitLoadConfigAndFonts();
     FcConfigSubstitute(configure, searchPattern, FcMatchPattern);

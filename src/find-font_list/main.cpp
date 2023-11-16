@@ -46,11 +46,16 @@ const std::filesystem::path SearchFontPath(FcPattern* pattern, FcConfig* config 
     return foundPath;
 }
 
-int main() {
+int main(int argc, char* argv[]) {
+    if(argc <= 1) {
+        printf("usage: %s \"font-name\"\n", argv[0]);
+        return 0;
+    }
+
     FcInit();
 
     FcPattern* searchPattern = FcPatternCreate();
-    FcPatternAddString(searchPattern, FC_FAMILY, (const FcChar8*)"IPAex明朝");
+    FcPatternAddString(searchPattern, FC_FAMILY, (const FcChar8*)argv[1]);
 
     // 関数`FcFontList`を用いてフォントを探す．
     // この関数は、与えられたパターンを満たすフォントのみを返す．
