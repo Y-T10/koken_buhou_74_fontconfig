@@ -11,15 +11,11 @@
 
 | プログラム名 | 説明 |
 | :-------------- | ---- |
-| `find-ipa-font`  | 記事に掲載されているコードのプログラム． |
-| `find-ipa-font_error`  | エラー処理を追加した`find-ipa-font`． |
-| `find-ipa-font_list`  | 関数`FcFontList`を用いてフォントを探すプログラム． |
+| `find-font`  | 記事に掲載されているコードのプログラム． |
+| `find-font_error`  | エラー処理を追加した`find-font`． |
+| `find-font_list`  | 関数`FcFontList`を用いてフォントを探すプログラム． |
 
 これらのプログラムは生成されると`bin`ディレクトリに格納されます．
-
-## プログラム実行時の注意
-`find_ipa_font`、`find_ipa_font_error`はIPAフォントのパスを取得するため、
-事前にIPAフォントをインストールしておいてください．
 
 ## ライセンス
 ### fontconfig
